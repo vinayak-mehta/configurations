@@ -1,0 +1,11 @@
+set number
+set cindent
+set autoindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set pastetoggle=
+set ruler
+set background=dark
+set pastetoggle=<F2>
+syntax on
