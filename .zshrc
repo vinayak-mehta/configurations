@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-umask 022
-unsetopt beep
-
 fortune | cowsay
 
 # aliases
@@ -110,9 +107,9 @@ alias l='ls -ltrhs'
 alias ll='ls -alF'
 alias la='ls -A'
 
-# for opening gui apps on windows
-export DISPLAY=:0
-export LIBGL_ALWAYS_INDIRECT=1
+# for opening gui apps on Windows
+# export DISPLAY=:0
+# export LIBGL_ALWAYS_INDIRECT=1
 
 # for virtualenvwrapper
 export PATH="$PATH:/home/vinayak/.local/bin"
@@ -120,7 +117,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /home/vinayak/.local/bin/virtualenvwrapper.sh
 
 # for conda
-export PATH="/home/vinayak/miniconda3/bin:$PATH"
+# export PATH="/home/vinayak/miniconda3/bin:$PATH"
 
 # set default editor to vim
 export VISUAL=vim
