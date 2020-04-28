@@ -10,7 +10,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: '"Meslo LG M for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -20,6 +20,12 @@ module.exports = {
 
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
+
+    // line height as a relative unit
+    lineHeight: 1,
+
+    // letter spacing as a relative unit
+    letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -54,12 +60,12 @@ module.exports = {
 
     // if you're using a Linux setup which show native menus, set to false
     // default: `true` on Linux, `true` on Windows, ignored on macOS
-    showHamburgerMenu: '',
+    showHamburgerMenu: false,
 
     // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
     // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
-    showWindowControls: '',
+    showWindowControls: false,
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -98,17 +104,17 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\Windows\\System32\\cmd.exe',
+    shell: '',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
-    shellArgs: ['--login', '-i', '/c wsl'],
+    shellArgs: ['--login'],
 
     // for environment variables
     env: {},
 
     // set to `false` for no bell
-    bell: false,
+    bell: 'SOUND',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -133,7 +139,6 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    //"hyperterm-cobalt2-theme"
     "an-old-hype"
   ],
 
@@ -147,4 +152,3 @@ module.exports = {
     // 'window:devtools': 'cmd+alt+o',
   },
 };
-
