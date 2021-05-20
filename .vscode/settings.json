@@ -1,25 +1,52 @@
 {
-    "window.zoomLevel": 0,
+    "[html]": {
+      "editor.tabSize": 2
+    },
+    "[javascript]": {
+      "editor.formatOnSave": false,
+      "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": false
+    },
+    "[python]": {
+      "editor.tabSize": 4
+    },
+    "[ruby]": {
+      "editor.tabSize": 2
+    },
     "breadcrumbs.enabled": true,
-    "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
-    "editor.fontSize": 16,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.fontFamily": "Inconsolata for Powerline, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
     "editor.renderWhitespace": "all",
     "editor.rulers": [80, 100],
     "editor.wordWrap": "on",
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": false,
+    "eslint.alwaysShowStatus": true,
+    // tell the eslint plugin to run on save
+    "eslint.validate": ["html", "javascript", "javascriptreact"],
+    // optional but important: If you have the prettier extension enabled for
+    // other languages like CSS and HTML, turn it off for JS
+    // since we are doing it through eslint already
+    "eslint.workingDirectories": [{
+      "mode": "auto"
+    }],
+    "files.associations": {
+      "*.svg": "html"
+    },
+    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
-    "[python]": {
-        "editor.tabSize": 4
-    },
-    "[html]": {
-        "editor.tabSize": 2
-    },
-    "[javascript]": {
-        "editor.tabSize": 2
-    },
-    "editor.copyWithSyntaxHighlighting": false
-}
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.jsxBracketSameLine": true,
+    "telemetry.enableCrashReporter": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.labelFormat": "long"
+  }
